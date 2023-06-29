@@ -1,24 +1,485 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="URL入る" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Yesteryear"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:700"
+      rel="stylesheet"
+    />
+    <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+    <link
+      href="css/photoswipe/photoswipe.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/photoswipe/default-skin/default-skin.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="img/favicon2.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <header>
-      <img src="profile-picture.jpg" alt="Profile Picture" />
-      <h1>My Name</h1>
-      <p>A short description about myself and my skills.</p>
-    </header>
 
-    <main>
-      <h2>My Projects</h2>
-      <ul>
-        <li><a href="project1.html">Project 1</a></li>
-        <li><a href="project2.html">Project 2</a></li>
-        <li><a href="project3.html">Project 3</a></li>
-        <!-- Add more projects as needed -->
-      </ul>
-    </main>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <h1 class="logo">
+          <span class="logo-title">Toshiki Takakubo's portfolio</span>
+          <span class="logo-desc">Graduate Student</span>
+        </h1>
+      </header>
+      <nav id="gnav">
+        <ul>
+          <li>
+            <i class="fas fa-user fa-lg"><a href="#Profile">PROFILE</a></i>
+          </li>
+          <li>
+            <i class="fas fa-lightbulb fa-lg"><a href="#skill">SKILL</a></i>
+          </li>
+          <li>
+            <i class="fas fa-tasks fa-lg"><a href="#works">WORKS</a></i>
+          </li>
+          <li>
+            <i class="fas fa-envelope fa-lg"><a href="#contact">CONTACT</a></i>
+          </li>
+        </ul>
+      </nav>
+      <main id="contents">
+        <section class="section" id="Profile">
+          <div class="inner">
+            <div class="section-title-block">
+              <h2 class="section-title">
+                <i class="fas fa-user"
+                  ><span class="section-title-css">PROFILE</span></i
+                >
+              </h2>
+            </div>
+            <div class="two-column-wrapper">
+              <div class="two-column-image profile">
+                <img src="img/profile/profile.jpg" alt="" />
+              </div>
+              <div class="two-column-desc">
+                <p class="text" id="profile_text">
+                  &emsp;はじめまして。金沢大学大学院電子情報通信学専攻1年の<br />高窪俊企です。現在、私は<a
+                    href="http://www.li-nlab.org/?page_id=156"
+                    target="_blank"
+                    >情報ネットワーク研究室</a
+                  >に所属しています。この研究室ではブロックチェーンや人口知能(AI)、メタバース、量子ネットワークなどの研究を行っています。
+                  私の専門分野はブロックチェーンであり、ブロックチェーンを使ったECサイトにおける価格監査システムの構築やスループット
+                  向上のためのシャーディングに関する研究を行っています。<br />
+                  &emsp;プログラミング経験は、大学2年の頃に始めて3年くらい続けています。研究に使ったり、趣味でいろいろ触ってます。
+                  (2023/06/29)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="skill">
+          <div class="inner">
+            <div class="section-title-block">
+              <h2 class="section-title">
+                <i class="fas fa-lightbulb fa-lg"
+                  ><span class="section-title-css">SKILL</span></i
+                >
+              </h2>
+              <p class="section-desc"></p>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="skill-desc">
+                  <h3 class="skill-desc-title">
+                    <i class="fa-regular fa-file-lines"></i>プログラミング言語
+                  </h3>
+                  <p>
+                    JavaScriptやブロックチェーンを操作するプログラミング言語であるSolidityが得意です。
+                  </p>
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">技術</th>
+                        <th scope="col">経験年数</th>
+                        <th scope="col">用途</th>
+                        <th scope="col">スキル</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">JavaScript</th>
+                        <td>1年6ヶ月</td>
+                        <td>研究、ECサイト構築</td>
+                        <td>
+                          <span class="rating"><p class="rate rate4"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Solidity</th>
+                        <td>1年</td>
+                        <td>研究(ブロックチェーンのプログラミング)</td>
+                        <td>
+                          <span class="rating"><p class="rate rate4"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Python</th>
+                        <td>2年</td>
+                        <td>機械学習、グラフの作成</td>
+                        <td>
+                          <span class="rating"><p class="rate rate3"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">C言語</th>
+                        <td>1年</td>
+                        <td>数値計算、画像処理</td>
+                        <td>
+                          <span class="rating"><p class="rate rate2"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">HTML</th>
+                        <td>6ヶ月</td>
+                        <td>ECサイト構築</td>
+                        <td>
+                          <p class="rate rate3"></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CSS</th>
+                        <td>6ヶ月</td>
+                        <td>ECサイト構築</td>
+                        <td>
+                          <span class="rating"><p class="rate rate2"></p></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="skill-desc">
+                  <h3 class="skill-desc-title">その他技術</h3>
+                  <p>開発等で使用したツールやFWです。</p>
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">技術</th>
+                        <th scope="col">経験年数</th>
+                        <th scope="col">スキル</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Node.js</th>
+                        <td>1年</td>
+                        <td>
+                          <span class="rating"><p class="rate rate3"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">WSL2(ubuntu)</th>
+                        <td>1年</td>
+                        <td>
+                          <span class="rating"><p class="rate rate4"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">React</th>
+                        <td>2ヵ月</td>
+                        <td>
+                          <span class="rating"><p class="rate rate1"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">MongoDB</th>
+                        <td>2ヵ月</td>
+                        <td>
+                          <span class="rating"><p class="rate rate2"></p></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="skill-desc">
+                  <h3 class="skill-desc-title">ツール</h3>
+                  <p>開発等で使用したツールやFWです。</p>
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">技術</th>
+                        <th scope="col">経験年数</th>
+                        <th scope="col">スキル</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Slack</th>
+                        <td>1年</td>
+                        <td>
+                          <span class="rating"><p class="rate rate5"></p></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Git</th>
+                        <td>3ヶ月</td>
+                        <td>
+                          <span class="rating"><p class="rate rate2"></p></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="works">
+          <div class="inner">
+            <div class="section-title-block">
+              <h2 class="section-title">
+                <i class="fas fa-tasks fa-lg"
+                  ><span class="section-title-css">WORKS</span></i
+                >
+              </h2>
+              <div class="section-desc"></div>
+            </div>
+            <div class="card-wrapper my-gallery">
+              <figure class="card">
+                <img
+                  class="card-image"
+                  src="img/works/thumb/blockchain.jpg"
+                  alt=""
+                />
+                <figcaption class="card-caption">
+                  <p class="card-caption-title">
+                    ブロックチェーンを用いたECの価格監査システム
+                  </p>
+                  <p class="card-caption-info">学部生の研究成果です。</p>
+                  <p class="card-caption-info">Solidty/JavaScript/WSL2</p>
+                  <p class="card-caption-info">現在論文が査読中</p>
+                </figcaption>
+              </figure>
+              <figure class="card">
+                <img
+                  class="card-image"
+                  src="img/works/thumb/ecSite.png"
+                  alt=""
+                />
+                <figcaption class="card-caption">
+                  <p class="card-caption-title">ECサイトの構築</p>
+                  <p class="card-caption-info">/JavaScript/HTML/CSS/WSL2</p>
+                  <p class="card-caption-info">
+                    <a
+                      href="https://github.com/toshiki-git/my_ec_site"
+                      target="_blank"
+                      >github</a
+                    >
+                  </p>
+                </figcaption>
+              </figure>
+              <!--  <figure class="card">
+                <img
+                  class="card-image"
+                  src="img/works/thumb/blockchain.jpg"
+                  alt=""
+                />
+                <figcaption class="card-caption">
+                  <p class="card-caption-title">
+                    ブロックチェーンを用いたECの価格監査システム
+                  </p>
+                  <p class="card-caption-info">学部生の研究成果です。</p>
+                  <p class="card-caption-info">Solidty/JavaScript/WSL2</p>
+                  <p class="card-caption-info">現在論文が査読中</p>
+                </figcaption>
+              </figure> -->
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="inner">
+            <div class="section-title-block">
+              <h2 class="section-title">
+                <i class="fas fa-envelope fa-lg"
+                  ><span class="section-title-css">CONTACT</span></i
+                >
+              </h2>
+              <p class="section-desc">
+                何かありましたらE-mailにご連絡をください。
+              </p>
+            </div>
+            <div class="contact-wrapper">
+              <div class="contact-list" style="text-align: center">
+                <a href="mailto:tosiki219@stu.kanazawa-u.ac.jp" target="_blank"
+                  ><img
+                    src="img/contact/icon_contact.jpg"
+                    alt=""
+                    class="contact-img"
+                    style="margin: 0 auto"
+                  /><span class="contact-list-desc">Email</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="inner">
+          <nav class="footer-link">
+            <ul>
+              <li><a href="#Profile">Profile</a></li>
+              <li><a href="#skill">SKILL</a></li>
+              <li><a href="#works">WORKS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="position: relative">
+        <a
+          href="https://www.codmon.com/mypage/"
+          class="codmon-login-widget"
+          target="_blank"
+          >Codmon</a
+        >
+        <script src="https://www.codmon.com/mypage/js/login-widget.js"></script>
+        <span
+          style="
+            font-size: 11px;
+            line-height: 1.2;
+            position: absolute;
+            top: 364px;
+            left: 36px;
+          "
+          >powerd by
+          <a href="https://www.codmon.com/" target="_blank"
+            >保育園ICTシステム コドモン</a
+          ></span
+        >
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/photoswipe/photoswipe.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/photoswipe/photoswipe-ui-default.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/photoswipe/photoswipe_setup.js"
+    ></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
